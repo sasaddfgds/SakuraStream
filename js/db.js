@@ -17,15 +17,6 @@ const animeData = [
         status: "finished",
         link: "https://kodik.info/find-player?shikimoriID=51009"
     },
-     {
-        id: "jujutsu-kaisen-0",
-        title: "Магическая битва 0 (Фильм)",
-        poster: "assets/img/jujutsu-kaisen.jpg", // Локальный файл
-        episodes: "Фильм",
-        rating: "8.2",
-        status: "finished",
-        link: "https://kodik.info/find-player?shikimoriID=48661"
-    },
     {
         id: "naruto-1",
         title: "Наруто (1 сезон)",
