@@ -53,4 +53,59 @@ const animeData = [
         status: "finished",
         link: "https://kodik.info/find-player?shikimoriID=33"
     },
+    {
+        id: "aot-1",
+        title: "Атака титанов (1 сезон)",
+        poster: "assets/img/Attack-1.jpg",
+        episodes: "25 / 25",
+        rating: "8.5",
+        status: "finished",
+        link: "https://kodik.info/find-player?shikimoriID=16498"
+    },
+    {
+        id: "aot-2",
+        title: "Атака титанов (2 сезон)",
+        poster: "assets/img/Attack-2.jpg",
+        episodes: "12 / 12",
+        rating: "8.4",
+        status: "finished",
+        link: "https://kodik.info/find-player?shikimoriID=25777"
+    },
+    {
+        id: "aot-3",
+        title: "Атака титанов (3 сезон)",
+        poster: "assets/img/Attack-3.jpg",
+        episodes: "12 / 12",
+        rating: "8.6",
+        status: "finished",
+        link: "https://kodik.info/find-player?shikimoriID=35760"
+    },
+    {
+        id: "aot-final",
+        title: "Атака титанов: Финал",
+        poster: "assets/img/Attack-4.jpg",
+        episodes: "16 / 16",
+        rating: "8.9",
+        status: "finished",
+        link: "https://kodik.info/find-player?shikimoriID=40028"
+    },
+    {
+        id: "vampire-knight-1",
+        title: "Рыцарь-вампир (1 сезон)",
+        poster: "assets/img/Vampire-1.jpg",
+        episodes: "13 / 13",
+        rating: "7.0",
+        status: "finished",
+        link: "https://kodik.info/find-player?shikimoriID=3457"
+    },
+    {
+        id: "vampire-knight-guilty",
+        title: "Рыцарь-вампир: Виновный (2 сезон)",
+        poster: "assets/img/Vampire-2.jpg",
+        episodes: "13 / 13",
+        rating: "7.3",
+        status: "finished",
+        link: "https://kodik.info/find-player?shikimoriID=4752"
+    }
+    
 ];
