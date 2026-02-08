@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Stream | Каталог</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="background-animation"></div>
+    <div class="vignette"></div>
+
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'">SAKURA<span class="logo-accent" style="color:var(--primary)">STREAM</span></div>
+        
+        <nav class="nav-menu">
+            <a href="index.html">Главная</a>
+            <a href="popular.html" class="active">Каталог</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" placeholder="Поиск...">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            
+            <div class="filter-wrapper">
+                <button id="filter-btn" class="gear-btn">
+                    <i class="fa-solid fa-filter"></i>
+                </button>
+                
+                <div id="filter-panel" class="filter-dropdown">
+                    <div class="filter-section">
+                        <h4>Статус</h4>
+                        <label class="radio-container">Все
+                            <input type="radio" name="status" value="all" checked>
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label class="radio-container">Онгоинги
+                            <input type="radio" name="status" value="ongoing">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label class="radio-container">Завершенные
+                            <input type="radio" name="status" value="finished">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="filter-section">
+                        <h4>Сортировка</h4>
+                        <label class="radio-container">По умолчанию
+                            <input type="radio" name="sort" value="default" checked>
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label class="radio-container">По рейтингу
+                            <input type="radio" name="sort" value="rating">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button id="open-settings" class="gear-btn">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </header>
+
+    <main style="padding-top: 50px;">
+        <h2 class="section-title"><i class="fa-solid fa-fire"></i> ПОПУЛЯРНОЕ</h2>
+        
+        <div class="grid" id="anime-grid"></div>
+    </main>
+
+    <div id="settings-overlay" class="settings-overlay">
+        <button id="close-settings-x" class="close-cross"><i class="fa-solid fa-xmark"></i></button>
+        <h2 class="settings-title">System Settings</h2>
+        <div class="settings-container">
+            <div class="setting-row">
+                <span class="setting-label"><i class="fa-solid fa-palette"></i> Цвет интерфейса</span>
+                <div class="colors-wrapper" style="display:flex; gap:10px;">
+                    <div class="color-option active" data-color="#ff0055" style="background: #ff0055;"></div>
+                    <div class="color-option" data-color="#00e5ff" style="background: #00e5ff;"></div>
+                    <div class="color-option" data-color="#8c00ff" style="background: #8c00ff;"></div>
+                    <div class="color-option" data-color="#ff9100" style="background: #ff9100;"></div>
+                </div>
+            </div>
+            <div class="setting-row">
+                <span class="setting-label"><i class="fa-solid fa-border-all"></i> Размер сетки</span>
+                <input type="range" id="grid-size" class="range-slider" min="180" max="300" value="220">
+            </div>
+            <div class="setting-row">
+                <span class="setting-label"><i class="fa-solid fa-expand"></i> Размер лепестков</span>
+                <input type="range" id="petal-size" class="range-slider" min="5" max="30" value="10">
+            </div>
+            <div class="setting-row">
+                <span class="setting-label"><i class="fa-solid fa-wind"></i> Эффект лепестков</span>
+                <label class="toggle">
+                    <input type="checkbox" id="petal-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <button id="close-settings" class="close-settings-btn">Сохранить и Выйти</button>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

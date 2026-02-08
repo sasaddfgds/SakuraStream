@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Stream | Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="background-animation"></div>
+    <div class="vignette"></div>
+
+    <header>
+        <div class="logo">SAKURA<span class="highlight">STREAM</span></div>
+        
+        <nav class="nav-menu">
+            <a href="index.html" class="active">Главная</a>
+            <a href="popular.html">Каталог</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" placeholder="Поиск аниме...">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            
+            <button id="open-settings" class="gear-btn">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 90vh;">
+        <div class="hero-bg">
+            <img src="assets/img/jujutsu-kaisen.jpg" alt="Hero Background">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <span class="hero-tag">№1 В ТРЕНДЕ</span>
+            <h1 class="hero-title">МАГИЧЕСКАЯ<br>БИТВА</h1>
+            <p class="hero-desc">
+                Мир, где проклятия рождаются из негативных эмоций людей. 
+                Юдзи Итадори становится вместилищем мощного проклятия...
+            </p>
+            <div class="hero-buttons">
+                <a href="watch.html?id=jujutsu-kaisen-1" class="btn-primary">
+                    <i class="fa-solid fa-play"></i> СМОТРЕТЬ
+                </a>
+                <a href="popular.html" class="btn-secondary">
+                    <i class="fa-solid fa-list"></i> КАТАЛОГ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="settings-overlay" class="settings-overlay">
+        <button id="close-settings-x" class="close-cross"><i class="fa-solid fa-xmark"></i></button>
+        <h2 class="settings-title">Настройки</h2>
+        <div class="settings-container">
+            <div class="setting-row">
+                <span class="setting-label">Цвет темы</span>
+                <div class="color-options">
+                    <div class="color-option active" data-color="#ff0055" style="background: #ff0055;"></div>
+                    <div class="color-option" data-color="#00e5ff" style="background: #00e5ff;"></div>
+                    <div class="color-option" data-color="#8c00ff" style="background: #8c00ff;"></div>
+                    <div class="color-option" data-color="#ff9100" style="background: #ff9100;"></div>
+                </div>
+            </div>
+            <div class="setting-row">
+                <span class="setting-label">Размер лепестков</span>
+                <input type="range" id="petal-size" class="range-slider" min="5" max="30" value="10">
+            </div>
+            <div class="setting-row">
+                <span class="setting-label">Лепестки</span>
+                <label class="toggle">
+                    <input type="checkbox" id="petal-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <button id="close-settings" class="close-settings-btn">Сохранить</button>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

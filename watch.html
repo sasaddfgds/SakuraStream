@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр | Sakura Stream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div id="background-animation"></div>
+    <div class="vignette"></div>
+
+    <div id="settings-overlay" class="settings-overlay">
+        <button id="close-settings-x" class="close-cross"><i class="fa-solid fa-xmark"></i></button>
+
+        <h2 style="margin-bottom: 40px; text-transform: uppercase;">Настройки</h2>
+        <div class="settings-container">
+            <div class="setting-row">
+                <span>Цвет темы</span>
+                <div style="display:flex; gap:10px">
+                    <div class="color-option active" data-color="#ff0055" style="background: #ff0055;"></div>
+                    <div class="color-option" data-color="#00e5ff" style="background: #00e5ff;"></div>
+                    <div class="color-option" data-color="#9d00ff" style="background: #9d00ff;"></div>
+                </div>
+            </div>
+            <div class="setting-row">
+                <span>Лепестки</span>
+                <label class="toggle">
+                    <input type="checkbox" id="petal-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <button id="close-settings" class="close-settings-btn">Закрыть</button>
+    </div>
+
+    <div class="watch-container">
+        <header>
+            <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Назад</a>
+            <button id="open-settings" class="gear-btn"><i class="fa-solid fa-gear"></i></button>
+        </header>
+        
+        <div class="video-box">
+            <div id="player-frame"></div>
+        </div>
+
+        <div class="info-box">
+            <h1 id="anime-title">Загрузка...</h1>
+            <p id="anime-desc">Описание...</p>
+        </div>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
