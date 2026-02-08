@@ -377,3 +377,53 @@ input:checked + .slider:before { transform: translateX(30px); }
     top: 5px; left: 5px; width: 6px; height: 6px;
     border-radius: 50%; background: white;
 }
+/* === МОБИЛЬНАЯ ЗАГЛУШКА (ANTI-MOBILE SHIELD) === */
+#mobile-warning {
+    display: none; /* На ПК скрыто */
+}
+
+@media (max-width: 768px) {
+    /* Скрываем всё, что было */
+    body > *:not(#mobile-warning) {
+        display: none !important;
+    }
+
+    /* Показываем заглушку */
+    #mobile-warning {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        color: var(--primary);
+    }
+
+    #mobile-warning i {
+        font-size: 5rem;
+        margin-bottom: 20px;
+        animation: pulse 2s infinite;
+    }
+
+    #mobile-warning h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    #mobile-warning p {
+        color: #888;
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
