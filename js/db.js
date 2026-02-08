@@ -97,6 +97,16 @@ const animeData = [
         rating: "7.3",
         status: "finished",
         link: "https://kodik.info/find-player?shikimoriID=4752"
+    },
+    {
+        id: "redo-of-healer",
+        title: "Маг-целитель: Новый старт",
+        // Постер с Shikimori
+        poster: "assets/img/Redo-1.jpg",
+        episodes: "12 / 12",
+        rating: "6.9",
+        status: "finished",
+        // ID 40750 — это Маг-целитель
+        link: "https://kodik.info/find-player?shikimoriID=40750"
     }
-    
 ];
