@@ -108,5 +108,14 @@ const animeData = [
         status: "finished",
         // ID 40750 — это Маг-целитель
         link: "https://kodik.info/find-player?shikimoriID=40750"
+    },
+    {
+        id: "yosuga-no-sora",
+        title: "Связь (Yosuga no Sora)",
+        poster: "assets/img/Yosuga no Sora.jpg",
+        episodes: "12 / 12",
+        rating: "6.3",
+        status: "finished",
+        link: "https://kodik.info/find-player?shikimoriID=8861"
     }
 ];
